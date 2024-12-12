@@ -2,22 +2,21 @@
 <html>
  <head>
   <title>Main</title>
-  <style> 
-    body{background-color: #18223B; color: white; font-family: Arial; line-height: .1"; padding-top: 10px;} h1 {text-align: center}    
-            
-    #css 
-    p {color: white; font-size: 20px;}
-    canvas {border: 1px solid white; background-color: white;}
-  </style>
+  <link rel="stylesheet" href="styles.css" />
  </head>
-  
+
  <body>
-    <h1 style="color:gold">Finalized Visualization</h1>
-    <img alt="profilePic" src="https://uploads.codehs.com/8cd14c4c035e46051835580a76e25b16">
-     <p style="color:white">Below presents the final visualization for Godzilla movie statistics - covering all essential aspects such as titles, primary genres, release dates, and international box office results.</p>
+   <script src="d3v7.js"></script>
+    <h1>Finalized Visualization</h1>
+     <p>Below presents the final visualization for Godzilla movie statistics - covering all essential aspects such as titles, primary genres, release dates, eras, and international box office results.</p>
+
+     df = pd.read_excel('/kaggle/input/godzilla-film-franchise-and-other-kaiju/Godzilla  (Public).xlsx', skiprows=1)
+df.head()
    
-    <h3 style="color:gold">Sources:<ul></h3>
+    <h1>Sources:<h1ul>
+   <ul>
     <li><a href="https://wikizilla.org/wiki/Main_Page">Wikizilla</a></li>
-    <li><a href="https://godzillamovies.com/">GodzillaMovies.com</a></li>
+    <li><a href="https://godzillamovies.com/">Godzilla Movies website</a></li>
+   </ul>
    </body>
 </html>
